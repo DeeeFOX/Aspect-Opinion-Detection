@@ -20,7 +20,7 @@ public class CommentConvertor {
     public static Comment str2Comment(String str) {
         String[] strArr = str.split(Config.splitDefault);
         int id = Integer.parseInt(strArr[0]);
-        String content = strArr[18];
+        String content = strArr[19];
         return CommentFactory.build(id, content);
     }
 }
