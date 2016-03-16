@@ -2,7 +2,7 @@ package utils.convert;
 
 import conf.Config;
 import models.Comment;
-import utils.factory.CommentFactory;
+import utils.factory.Comments;
 
 /**
  * Created by root on 16-3-9.
@@ -21,6 +21,6 @@ public class CommentConvertor {
         String[] strArr = str.split(Config.splitDefault);
         int id = Integer.parseInt(strArr[0]);
         String content = strArr[19];
-        return CommentFactory.build(id, content);
+        return Comments.build(id, content);
     }
 }
